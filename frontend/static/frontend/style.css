@@ -1,0 +1,10 @@
+.todoItem {
+    display: flex;
+    padding: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.todoItem > p {
+    margin: 0;
+    margin-left: 1em;
+}

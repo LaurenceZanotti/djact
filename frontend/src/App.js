@@ -7,14 +7,14 @@ export default class App extends Component {
     constructor() {
         super()
         this.state = {
-            todoList: todosData.map(todo => <Todo key={todo.id} text={todo.text} completed={todo.completed}/>)
+            todoList: todosData
         }
     }
     render() {
         return (
             <main className="w-50 m-auto">
                 <h1>ToDo App</h1>
-                {this.state.todoList}
+                {this.state.todoList.map(todo => <Todo key={todo.id} text={todo.text} completed={todo.completed}/>)}
             </main>
         )
     }

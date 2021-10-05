@@ -1,10 +1,23 @@
+main {
+    margin: auto;
+    max-width: 50%;
+}
+
 .todoItem {
     display: flex;
     padding: 0.5em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(184, 184, 184);
 }
 
 .todoItem > p {
     margin: 0;
     margin-left: 1em;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+h1 ~ div.todoItem:first-of-type {
+    border-top: 1px solid rgb(184, 184, 184);
 }

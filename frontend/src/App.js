@@ -47,8 +47,8 @@ export default class App extends Component {
         const todoItems = this.state.todoList.map(todo => <Todo key={todo.id} item={todo} handleChange={this.handleChange}/>)
 
         return (
-            <main className="w-50 m-auto">
-                <h1>ToDo App</h1>
+            <main>
+                <h1 className="m-3 text-center">ToDo App</h1>
                 { todoItems }
             </main>
         )
